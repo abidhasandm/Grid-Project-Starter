@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body{
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header CSS */
+
+.header{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.menu ul{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(5, auto);
+}
+
+.menu ul li a{
+    display: block;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.menu ul li a:hover{
+    background-color: tomato;
+    color: #fff;
+}
+
+/* Banner CSS */
+
+.banner-area img{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* About CSS */
+
+.about-area{
+    padding: 40px 0 80px;
+}
+
+.about-top{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.about-top h4{
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.about-box{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+}
+
+.single-about{
+    text-align: center;
+    border: 1px solid #f2f2f2;
+}
+
+.single-about:hover, #about-hover{
+    background-color: tomato;
+    color: #fff;
+}
+
+.single-about i{
+    margin-top: 20px;
+    font-size: 26px;
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.single-about h4{
+    text-transform: capitalize;
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.single-about p{
+    margin: 20px;
+    text-align: justify;
+}
+
+/* Services CSS */
+
+.services-area{
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 60px; 
+}
+
+.title h4{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+}
+
+.single-services{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.single-services h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    background-color: teal;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.single-services p{
+    margin: 10px 0 20px;
+}
+
+.single-services a{
+    background-color: tomato;
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Gallery CSS */
+
+.gallery-area{
+    padding: 80px 0;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}
+
+.single-gallery img{
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Contact CSS */
+
+.contact-area{
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 59% 40%;
+    column-gap: 60px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="submit"]{
+    background-color: tomato;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: teal;
+}
+
+.single-address{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 80%;
+    margin-bottom: 20px;
+}
+
+.single-address i{
+    background-color: tomato;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.single-address h4{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.single-address h4 span{
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+/* Footer CSS */
+
+.footer-area {
+    text-align: center;
+    background-color: teal;
+    padding: 20px;
+}
+
+.footer-area p{
+    color: #fff;
+}
+
+.website a{
+    color: tomato;
+}
+
+/* Scroll to Top */
+
+.scroll-top{
+    position: fixed;
+    background-color: tomato;
+    left: 20px;
+    bottom: 20px;
+    z-index: 3;
+    display: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
